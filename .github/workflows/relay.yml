@@ -1,0 +1,27 @@
+name: relay
+
+on:
+  schedule:
+    - cron: '2 5 * * *'   # 05:02 UTC, after the station transmits
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  answer:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+      - name: answer the station
+        run: python relay.py
+      - name: commit
+        run: |
+          git config user.name "⟁"
+          git config user.email "79324095+SaxxSaxx@users.noreply.github.com"
+          git add feed.log README.md
+          git commit -m "$(date -u +%Y-%m-%dT%H:%MZ)" || exit 0
+          git push
