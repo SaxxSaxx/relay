@@ -2,6 +2,8 @@
 listening · 4625 kHz
 
 ```
+2026-07-13T08:11Z  TX ▓▓ 38 2F 28 34 7A 3B 3C 2E 3F 28
+2026-07-13T08:11Z  RX A9E1 :: ack
 2026-07-12T07:25Z  TX ▓▓ 29 2E 33 36 36 7A 32 3F 28 3F
 2026-07-12T07:25Z  RX DA50 :: ack
 2026-07-11T07:07Z  TX ▓▓ 39 35 2A 23
@@ -16,8 +18,6 @@ listening · 4625 kHz
 2026-07-07T08:16Z  RX F7C4 :: ack
 2026-07-06T08:55Z  TX ▓▓ 38 2F 28 34 7A 3B 3C 2E 3F 28
 2026-07-06T08:55Z  RX 1D2B :: ack
-2026-07-05T07:52Z  TX ▓▓ 29 2E 33 36 36 7A 32 3F 28 3F
-2026-07-05T07:52Z  RX 29D6 :: ack
 ```
 
 <sub>it answers. that's all you need to know.</sub>
